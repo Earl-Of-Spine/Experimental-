@@ -2,21 +2,16 @@
 {
   "modid": "ExperimentalMod",
   "name": "Experimental Mod",
-  "description": "Testing!",
+  "description": "Testing",
   "version": "1.7.10-1.0",
+  "credits": "Thanks to Pahimar for his Lets Mod youtube series.",
+  "logoFile": "",
   "mcversion": "1.7.10",
   "url": "https://twitter.com/Earl_Of_Spine",
   "updateUrl": "",
-  "authorList": [
-    "Earl Of Spine",
-    ""
-  ],
-  "credits": "Thanks to Pahimar, for his "lets Mod" series.",
-  "logoFile": "",
-  "screenshots": [
-  ],
+  "authorList": [ "Earl Of Spine" ],
   "parent":"",
-  "dependencies": [
-  ]
+  "screenshots": [],
+  "dependencies": [ "mod_MinecraftForge" ]
 }
 ]
