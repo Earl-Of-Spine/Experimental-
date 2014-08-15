@@ -1,0 +1,22 @@
+[
+{
+  "modid": "ExperimentalMod",
+  "name": "Experimental Mod",
+  "description": "Testing!",
+  "version": "1.7.10-1.0",
+  "mcversion": "1.7.10",
+  "url": "https://twitter.com/Earl_Of_Spine",
+  "updateUrl": "",
+  "authorList": [
+    "Earl Of Spine",
+    ""
+  ],
+  "credits": "Thanks to Pahimar, for his "lets Mod" series.",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]
