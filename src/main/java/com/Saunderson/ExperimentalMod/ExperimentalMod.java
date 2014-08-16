@@ -1,5 +1,6 @@
 package com.Saunderson.ExperimentalMod;
 
+import com.Saunderson.ExperimentalMod.configuration.ConfigurationHandler;
 import com.Saunderson.ExperimentalMod.proxy.IProxy;
 import com.Saunderson.ExperimentalMod.reference.reference;
 import cpw.mods.fml.common.Mod;
@@ -15,14 +16,14 @@ public class ExperimentalMod
    @Mod.Instance(reference.MOD_ID)
    public static ExperimentalMod instance;
 
-   @SidedProxy(clientSide = "com.Saunderson.ExperimentalMod.proxy.ClientProxy", serverSide = "com.Saunderson.ExperimentalMod.proxy.ServerProxy")
+   @SidedProxy(clientSide = reference.CLIENT_PROXY_CLASS, serverSide = reference.SERVER_PROXY_CLASS)
    public static IProxy proxy;
 
    @Mod.EventHandler
    public void preInit(FMLPreInitializationEvent event)
    {
-       // Blocks, Items, Server Networking, ext..
-
+        // Blocks, Items, Server Networking, ext..
+        ConfigurationHandler.init(event.getSuggestedConfigurationFile());
    }
 
     @Mod.EventHandler
