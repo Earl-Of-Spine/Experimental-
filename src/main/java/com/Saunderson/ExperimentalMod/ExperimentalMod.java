@@ -1,22 +1,22 @@
 package com.Saunderson.ExperimentalMod;
 
-import com.Saunderson.ExperimentalMod.proxy.ClientProxy;
 import com.Saunderson.ExperimentalMod.proxy.IProxy;
+import com.Saunderson.ExperimentalMod.reference.reference;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid="ExperimentalMod", name="Experimental Mod", version="1.7.10-1.0")
+@Mod(modid= reference.MOD_ID, name= reference.MOD_NAME, version= reference.VERSION)
 
 public class ExperimentalMod
 {
-   @Mod.Instance("ExperimentalMod")
+   @Mod.Instance(reference.MOD_ID)
    public static ExperimentalMod instance;
 
    @SidedProxy(clientSide = "com.Saunderson.ExperimentalMod.proxy.ClientProxy", serverSide = "com.Saunderson.ExperimentalMod.proxy.ServerProxy")
-   public static IProxy proxy,
+   public static IProxy proxy;
 
    @Mod.EventHandler
    public void preInit(FMLPreInitializationEvent event)
@@ -33,7 +33,7 @@ public class ExperimentalMod
     }
 
     @Mod.EventHandler
-    public void postinit(FMLPostInitializationEvent event)
+    public void postInit(FMLPostInitializationEvent event)
     {
         // Wrapping your shit up, ext..
 
